@@ -20,18 +20,18 @@ export default class Controller {
     let y = 0;
 
     if(this.cursors.up.isDown || this.keyW.isDown) {
-      y = -1;
+      y = -2;
 
     }
     if(this.cursors.down.isDown || this.keyS.isDown){
-      y += 1;
+      y += 2;
     }
 
     if(this.cursors.left.isDown || this.keyA.isDown) {
-      x = -1;
+      x = -2;
     }
     if(this.cursors.right.isDown || this.keyD.isDown) {
-      x += 1;
+      x += 2;
     }
 
     return new Phaser.Math.Vector2(x, y).normalize();
